@@ -6,18 +6,21 @@ def printboard(x):
     print("_|_|_")
     print("{}|{}|{}".format(x[7],x[8],x[9]))
 
+    
 #Function to check whether any player wins
 def checkwin(x):
     return x[1]==x[2]==x[3]!=' ' or x[4]==x[5]==x[6]!=' ' or x[1]==x[2]==x[3]!=' '\
            or x[1]==x[4]==x[7]!=' ' or x[5]==x[2]==x[8]!=' ' or x[9]==x[6]==x[3]!=' '\
            or x[1]==x[5]==x[9]!=' ' or x[7]==x[5]==x[3]!=' '
 
+        
 #function to ask repeat game again
 def ask():
     var=input("Do u want to continue y/n: ")
     if var=='y' or var=='Y':
         tictac()
 
+        
 #main tictactoe code      
 def tictac():
     print('Indices are from 1 to 9 from top to bottom')
@@ -64,5 +67,7 @@ def tictac():
     if (iterate==10 and win==False):
         print("match draws!")
         ask()
+        
+        
 #call to tictac function
 tictac()
