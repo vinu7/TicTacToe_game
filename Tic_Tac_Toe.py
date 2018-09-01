@@ -9,7 +9,7 @@ def printboard(x):
     
 #Function to check whether any player wins
 def checkwin(x):
-    return x[1]==x[2]==x[3]!=' ' or x[4]==x[5]==x[6]!=' ' or x[1]==x[2]==x[3]!=' '\
+    return x[1]==x[2]==x[3]!=' ' or x[4]==x[5]==x[6]!=' ' or x[7]==x[8]==x[9]!=' '\
            or x[1]==x[4]==x[7]!=' ' or x[5]==x[2]==x[8]!=' ' or x[9]==x[6]==x[3]!=' '\
            or x[1]==x[5]==x[9]!=' ' or x[7]==x[5]==x[3]!=' '
 
